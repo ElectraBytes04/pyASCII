@@ -1,11 +1,11 @@
--=-=-=-=-= **pyASCII, Electra04's ASCII game emulator** =-=-=-=-=-
+# -=-=-=-=-= **pyASCII, Electra04's ASCII game emulator** =-=-=-=-=-
 
 -= Built in Python 3 =-
 -= You can add your own apps =-
 -= Does not require TKinter =-
 -= Requires pygame =-
 
--=-=-=-=-= **How to add your own apps to pyASCII** =-=-=-=-=-
+### -=-=-=-=-= **How to add your own apps to pyASCII** =-=-=-=-=-
 
 -= Make the .py file for your app and put it in the "apps/" directory.
 -= Make a function called (name of your file)_main() with no args. Your app's code will go in 
