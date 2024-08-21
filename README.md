@@ -1,23 +1,15 @@
-# -=-=-=-=-= **pyASCII, Electra04's ASCII game emulator** =-=-=-=-=-
+# pyASCII
 
--= Built in Python 3 =-
+pyASCII is Python script/game launcher that displays in the CLI.
 
--= You can add your own apps =-
+### The story of pyASCII:
 
--= Does not require TKinter =-
+One day I was super bored at school. I thought of an idea to make some stupid stuff in python.
+The next day during study hall, I opened my Chromebook, went to [GDB Online Debugger](https://www.onlinegdb.com "Online GDB") and wrote some random stuff in Python 3.
 
--= Requires pygame =-
+I later felt that it would be cool to have a kind of script launcher to list all of this random shit and let a user choose what they wanted to run. I then opened the VSCode.dev web app and got to work, now, here we are.
 
-### -=-=-=-=-= **How to add your own apps to pyASCII** =-=-=-=-=-
+### Coming Soon:
 
--= Make the .py file for your app and put it in the "apps/" directory.
-
--= Make a function called (name of your file)_main() with no args. Your app's code will go in 
-   here. You also won't need to add a function call for your main function, that will be taken 
-   care of by pyASCII's main.py file (But feel free to do so if you want to!)
-   
--= If your app requires more than one file, make a folder with the same name as your app. 
-   You can put the other files for your app in there.
-   
--= You (probably) won't need to change anything in the main.py file. It will automatically 
-   find your app using the "glob" module.
++ Users are able to add their own scripts to a list of directories, [here](https://www.electra-dev.xyz "This isn't a feature yet!"), that other users would be able download and run with a short command.
++ The actual thing that this was meant for, I mean launching scripts.
