@@ -11,5 +11,7 @@ I later felt that it would be cool to have a kind of script launcher to list all
 
 ### Coming Soon:
 
-+ Users are able to add their own scripts to a list of directories, [here](https://www.electra-dev.xyz "This isn't a feature yet!"), that other users would be able download and run with a short command.
++ Users are able to add their own scripts to a list of directories, [at this Github Topic](https:// "This isn't a feature yet!"), that other users would be able download and run with a short command.
 + The actual thing that this was meant for, I mean launching scripts.
+
+<!-- [here](https://www.electra-dev.xyz "This isn't a feature yet!") -->

@@ -1,33 +1,55 @@
-import glob
+import time
 import os
+import importlib.util
+
 def main():
-    apps = glob.glob("apps/*.py")
-    apps = [os.path.splitext(app)[0] for app in apps]
-    builtins = glob.glob("built-in/*.py")
-    builtins = [os.path.splitext(builtin)[0] for builtin in builtins]
+    apps = os.listdir('apps')
+    builtins = os.listdir('built-in')
+
     def welcome():
         welcome = f"""
 +---------------------------------------------------------------+
-| pyASCII - Home x | /////////////////////////////////// _ [] x | 
-         |===============================================================|
-         |                                                               |
-         | -=-=-= pyASCII - ver 0.0.0 - created by ElectraBytes04 =-=-=- |
-         |           Hello! Thank you for using pyASCII.                 |
-         |                                                               |
-         |-=> Currently loaded user-made apps:                           |
-         | {apps}
-         |                                                               |
-         |===============================================================|
-         |                                                               |
-         |-=> And the built-in apps:                                     |
-         | {builtins}
-         |                                                               |
-         +---------------------------------------------------------------+
-        """
+| pyASCII - Home x | 04/04/04/04/04/04/04/04/04/04/04/04 _ [] x |
+|===============================================================|
+|                                                               |
+| -=-=-= pyASCII - ver 0.0.0 - created by ElectraBytes04 =-=-=- |
+|           Hello! Thank you for using pyASCII.                 |
+|                                                               |
+|-=> Currently loaded user-made apps:                           |
+| {apps}
+|                                                               |
+|===============================================================|
+|                                                               |
+|-=> And the built-in apps:                                     |
+| {builtins}
+|                                                               |
++---------------------------------------------------------------+
+"""
         print(welcome)
-        run = input("""
-What app would you like to run?
-Make sure the app you want to run is currently loaded or is built in to pyASCII.
-        """)
     welcome()
+
+    def appload():
+        try:
+            try:
+                print("Looking in /apps/")
+                time.sleep(1)
+                spec = importlib.util.spec_from_file_location(f"{run}", f"apps/{run}/{run}.py")
+                module = importlib.util.module_from_spec(spec)
+                spec.loader.exec_module(module)
+                return module
+            except:
+                print("Looking in /built-in/")
+                time.sleep(1)
+                spec = importlib.util.spec_from_file_location(f"{run}", f"built-in/{run}/{run}.py")
+                module = importlib.util.module_from_spec(spec)
+                spec.loader.exec_module(module)
+                return module
+        except:
+            print("Could not find the app you tried to load\nDid you spell the name of the app correctly?")
+
+    run = input("""
+Please enter the command you would like to run.
+For command help, go to the 'command-help' file in /data/.
+""")
+    appload()
 main()
