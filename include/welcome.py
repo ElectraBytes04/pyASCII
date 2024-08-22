@@ -28,7 +28,7 @@ def main(usermade, builtin):
 +---------------------------------------------------------------+
 """
         print(welcome_80h)
-    elif (columns >= 24):
+    elif (columns <= 66):
         welcome_24 = f"""
 +----------------------+
 |  pyASCII  x | _ [] x |
