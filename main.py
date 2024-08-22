@@ -31,16 +31,16 @@ def main():
     def appload():
         try:
             try:
-                print("Looking in /apps/")
+                print("Looking in apps/user-made/")
                 time.sleep(1)
-                spec = importlib.util.spec_from_file_location(f"{run}", f"apps/{run}/{run}.py")
+                spec = importlib.util.spec_from_file_location(f"{run}", f"apps/user-made/{run}/{run}.py")
                 module = importlib.util.module_from_spec(spec)
                 spec.loader.exec_module(module)
                 return module
             except:
-                print("Looking in /built-in/")
+                print("Looking in apps/built-in/")
                 time.sleep(1)
-                spec = importlib.util.spec_from_file_location(f"{run}", f"built-in/{run}/{run}.py")
+                spec = importlib.util.spec_from_file_location(f"{run}", f"apps/built-in/{run}/{run}.py")
                 module = importlib.util.module_from_spec(spec)
                 spec.loader.exec_module(module)
                 return module
