@@ -3,8 +3,8 @@ import os
 import importlib.util
 
 def main():
-    apps = os.listdir('apps')
-    builtins = os.listdir('built-in')
+    usermade = os.listdir('apps/user-made')
+    builtin = os.listdir('apps/built-in')
 
     def welcome():
         welcome = f"""
@@ -16,12 +16,12 @@ def main():
 |           Hello! Thank you for using pyASCII.                 |
 |                                                               |
 |-=> Currently loaded user-made apps:                           |
-| {apps}
+| {usermade}
 |                                                               |
 |===============================================================|
 |                                                               |
 |-=> And the built-in apps:                                     |
-| {builtins}
+| {builtin}
 |                                                               |
 +---------------------------------------------------------------+
 """
