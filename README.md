@@ -16,8 +16,8 @@ I then opened the VSCode.dev web app and got to work, now, here we are.
 
 ### Coming Soon:
 
-+ Users are able to add their own scripts to a list of directories, 
-  [at this Github Topic](https://github.com/topics/pyascii "Github Topic for pyASCII"), that other users 
++ Users are able to add their own scripts to a list of repositories, 
+  [this Github Topic](https://github.com/topics/pyascii "Github Topic for pyASCII"), that other users 
   would be able download and run with a short command.
 
 ### Notable Features:
