@@ -1,55 +1,42 @@
+import include.welcome
+import include.info
+
+import json
+
 import time
 import os
 import importlib.util
 
-def main():
-    usermade = os.listdir('apps/user-made')
-    builtin = os.listdir('apps/built-in')
-
-    def welcome():
-        welcome = f"""
-+---------------------------------------------------------------+
-| pyASCII - Home x | 04/04/04/04/04/04/04/04/04/04/04/04 _ [] x |
-|===============================================================|
-|                                                               |
-| -=-=-= pyASCII - ver 0.0.0 - created by ElectraBytes04 =-=-=- |
-|           Hello! Thank you for using pyASCII.                 |
-|                                                               |
-|-=> Currently loaded user-made apps:                           |
-| {usermade}
-|                                                               |
-|===============================================================|
-|                                                               |
-|-=> And the built-in apps:                                     |
-| {builtin}
-|                                                               |
-+---------------------------------------------------------------+
-"""
-        print(welcome)
-    welcome()
-
-    def appload():
+def appload(app):
         try:
             try:
                 print("Looking in apps/user-made/")
                 time.sleep(1)
-                spec = importlib.util.spec_from_file_location(f"{run}", f"apps/user-made/{run}/{run}.py")
+                spec = importlib.util.spec_from_file_location(
+                    f"{app}", f"apps/user-made/{app}/{app}.py"
+                )
                 module = importlib.util.module_from_spec(spec)
                 spec.loader.exec_module(module)
                 return module
             except:
                 print("Looking in apps/built-in/")
                 time.sleep(1)
-                spec = importlib.util.spec_from_file_location(f"{run}", f"apps/built-in/{run}/{run}.py")
+                spec = importlib.util.spec_from_file_location(
+                    f"{app}", f"apps/built-in/{app}/{app}.py"
+                )
                 module = importlib.util.module_from_spec(spec)
                 spec.loader.exec_module(module)
                 return module
         except:
-            print("Could not find the app you tried to load\nDid you spell the name of the app correctly?")
+            print(include.info.appload_error)
 
-    run = input("""
-Please enter the command you would like to run.
-For command help, go to the 'command-help' file in /data/.
-""")
-    appload()
+def main():
+    usermade = os.listdir('apps/user-made')
+    builtin = os.listdir('apps/built-in')
+
+    include.welcome.main(f"{usermade}", f"{builtin}")
+
+    run = input(include.info.command_help)
+    appload(f"{run}")    
+
 main()
