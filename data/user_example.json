@@ -5,7 +5,7 @@
     "devMode": true,
     "config": "(HOME)/.config/pyASCII/pyascii.json"
   }
-  "epicofstewUsermadeGameData (GameData for EpicOfStew, an example of a user-made game.)": {
+  "epicofstewGameData (GameData for EpicOfStew)": {
     "gameBeat": true,
     "current": {
       "world": 4,
@@ -17,15 +17,17 @@
       ]
     }
   }
-  "tanks-pyscBuiltinGameData (GameData for tanks-pysc, a game pre-packaged with pyASCII)": {
-    "hiScore": 2300,
-    "hiLevel": 7,
-    "hiTankMods": [
-      "Lead Rounds",
-      "Winter Treads",
-      "Tank Armor II",
-      "Homing Shots"
-    ]
+  "tanks-pyscGameData (GameData for tanks-pysc)": {
+    "hi": {
+      "hiScore": 2300,
+      "hiLevel": 7,
+      "hiTankMods": [
+        "Lead Rounds",
+        "Winter Treads",
+        "Tank Armor II",
+        "Lock On"
+      ]
+    }
     "current": {
       "currentScore": 1200,
       "currentLevel": 2,
