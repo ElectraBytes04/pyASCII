@@ -8,7 +8,7 @@ columns = get_termsize()
 
 def main(usermade, builtin):
     get_termsize()
-    if (columns >= 66):
+    if (columns <= 80):
         welcome_80h = f"""
 +---------------------------------------------------------------+
 | pyASCII - Home x | 04/04/04/04/04/04/04/04/04/04/04/04 _ [] x |
@@ -28,7 +28,27 @@ def main(usermade, builtin):
 +---------------------------------------------------------------+
 """
         print(welcome_80h)
-    elif (columns <= 66):
+	elif (columns <=50):
+		welcome_50h = f"""
++------------------------------------------------+
+| pyASCII - Home x | 04/04/04/04/04/04/04 _ [] x |
+|================================================|
+|                                                |
+| -=-= pyASCII - ver 0.0.0 - ElectraBytes04 =-=- |
+|          Thank you for using pyASCII!          |
+|                                                |
+| -=> Currently loaded user-made:                |
+| {usermade}
+|                                                |
+|================================================|
+|                                                |
+|-=> Currently loaded built-in:
+| {builtin}
+|                                                |
++------------------------------------------------+
+"""
+		print(welcome_50h)
+    elif (columns >= 30):
         welcome_24 = f"""
 +----------------------+
 |  pyASCII  x | _ [] x |
