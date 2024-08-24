@@ -26,7 +26,4 @@ I then opened the VSCode.dev web app and got to work, now, here we are.
   This means that it can launch any scripts or apps that you put in 
   the `apps/` subdirectory.
 
-+ If you want to run pyASCII in a terminal that has less than 66 columns, 
-  it will display narrower to accommodate.
-
 <!-- [here](https://www.electra-dev.xyz "This isn't a feature yet!") -->
