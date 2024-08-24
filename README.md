@@ -26,4 +26,6 @@ I then opened the VSCode.dev web app and got to work, now, here we are.
   This means that it can launch any scripts or apps that you put in 
   the `apps/` subdirectory.
 
++ pyASCII supports terminal widths of <80, <=50 and >=30.
+
 <!-- [here](https://www.electra-dev.xyz "This isn't a feature yet!") -->
