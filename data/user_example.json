@@ -4,38 +4,40 @@
     "theme": "pyASCIIBeta (Display theme)",
     "devMode": true,
     "config": "(HOME)/.config/pyASCII/pyascii.json"
-  }
-  "epicofstewGameData (GameData for EpicOfStew)": {
-    "gameBeat": true,
-    "current": {
-      "world": 4,
-      "level": 2,
-      "items": [
-        "Steel Sword",
-        "Wood Wand",
-        "Sturdy Shield"
-      ]
-    }
-  }
-  "tanks-pyscGameData (GameData for tanks-pysc)": {
-    "hi": {
-      "hiScore": 2300,
-      "hiLevel": 7,
-      "hiTankMods": [
-        "Lead Rounds",
-        "Winter Treads",
-        "Tank Armor II",
-        "Lock On"
-      ]
-    }
-    "current": {
-      "currentScore": 1200,
-      "currentLevel": 2,
-      "currentTankMods": [
-        "Stronger Shots",
-        "Tank Armor",
-        "Winter Treads"
-      ]
+  },
+  "gameData": {
+     "epicofstew (Game data for EpicOfStew)": {
+      "gameBeat": true,
+      "current": {
+        "world": 4,
+        "level": 2,
+        "items": [
+          "Steel Sword",
+          "Wood Wand",
+          "Sturdy Shield"
+        ]
+      }
+    },
+    "tanks-pysc (Game data for tanks-pysc)": {
+      "hi": {
+        "hiScore": 2300,
+        "hiLevel": 7,
+        "hiTankMods": [
+          "Lead Rounds",
+          "Winter Treads",
+          "Tank Armor II",
+          "Lock On"
+        ]
+      },
+      "current": {
+        "currentScore": 1200,
+        "currentLevel": 2,
+        "currentTankMods": [
+          "Stronger Shots",
+          "Tank Armor",
+          "Winter Treads"
+        ]
+      }
     }
   }
 }
