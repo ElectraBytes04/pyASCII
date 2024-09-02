@@ -14,6 +14,10 @@ I later felt that it would be cool to have a kind of script launcher to list
 all of this random shit and let a user choose what they wanted to run. 
 I then opened the VSCode.dev web app and got to work, now, here we are.
 
+### Planned:
+
++ Support for resolutions lower than 80 columns.
+
 ### Coming Soon:
 
 + Users are able to add their own scripts and apps to a list of repositories, 
@@ -26,6 +30,5 @@ I then opened the VSCode.dev web app and got to work, now, here we are.
   This means that it can launch any scripts or apps that you put in 
   the `apps/` subdirectory.
 
-+ pyASCII supports terminal widths of <80, <=50 and >=30.
 
 <!-- [here](https://www.electra-dev.xyz "This isn't a feature yet!") -->
