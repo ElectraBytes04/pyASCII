@@ -8,7 +8,7 @@ columns = get_termsize()
 
 def main(usermade, builtin):
     get_termsize()
-    if (columns <= 80):
+    if (columns >= 80):
         welcome_80h = f"""
 +---------------------------------------------------------------+
 | pyASCII - Home x | 04/04/04/04/04/04/04/04/04/04/04/04 _ [] x |
